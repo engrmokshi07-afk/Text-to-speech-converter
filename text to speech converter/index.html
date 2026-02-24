@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Speech Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="header">
+
+            <h1>Text To <span>Speech</span></h1>
+            <p class="subtitle">Type anything. Hear it instantly.</p>
+        </div>
+
+        <div class="card">
+            <div class="textarea-wrapper">
+                <textarea id="text-input" placeholder="Write or paste anything here…" maxlength="1000"></textarea>
+                <span class="char-count"><span id="count">0</span> / 1000</span>
+            </div>
+
+            <div class="row">
+                <div class="select-wrapper">
+                    <select id="voice-select"></select>
+                </div>
+                <button id="listen-btn">
+                    <span class="btn-icon">▶</span>
+                    <span id="btn-text">Listen</span>
+                </button>
+            </div>
+
+            <div class="visualizer" id="visualizer">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <p class="status" id="status"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
